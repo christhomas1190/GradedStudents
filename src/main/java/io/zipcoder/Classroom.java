@@ -1,5 +1,10 @@
 package io.zipcoder;
 
-public class Classroom {
+import java.util.ArrayList;
 
+public class Classroom {
+    Student student;
+    public Classroom() {
+
+    }
 }
