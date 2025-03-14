@@ -1,6 +1,7 @@
 package io.zipcoder;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 public class Classroom {
 private ArrayList<Student> student;
@@ -22,6 +23,9 @@ public Classroom(Integer maxStudents){
   }
   public Integer getMaxStudents() {
     return maxStudents;
+  }
+  public Double[] setAllTestscore(){
+    return (Double[]) Arrays.stream(testScores).toArray();
   }
 
 }

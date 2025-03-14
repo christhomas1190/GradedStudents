@@ -35,4 +35,8 @@ public class ClassroomTest {
         //Then
         Assert.assertEquals(expectedScores, expectedScores);
     }
+    @Test
+    public void setAllTestScores(){
+
+    }
 }
