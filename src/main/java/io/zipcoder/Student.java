@@ -2,7 +2,7 @@ package io.zipcoder;
 
 import java.util.ArrayList;
 
-public class Student extends Classroom{
+public class Student {
     private String firstName ;
     private String lastName ;
     private ArrayList<Double> testScores;
@@ -15,23 +15,27 @@ public class Student extends Classroom{
     }
 
 
-   public String getFirstName() {
-        return this.firstName;
+    public String getFirstName() {
+        return firstName;
    }
    public String getLastName() {
-        return this.lastName;
+        return lastName;
    }
-    public ArrayList gettestScores() {
-        return this.testScores;
+    public ArrayList<Double> gettestScores() {
+        return testScores;
     }
-    void setfirstName(String firstName) {
+    public void setfirstName(String firstName) {
        this.firstName=firstName;
     }
-    void  setlastName(String lastName) {
+    public void  setlastName(String lastName) {
         this.lastName=lastName;
     }
-   void  settestScores(ArrayList score) {
+    public void  settestScores(ArrayList<Double> score) {
        this.testScores= score;
     }
+    public void addtestScores(Double newScore){
+        testScores.add(newScore);
+    }
+
 }
 
